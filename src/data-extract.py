@@ -117,6 +117,11 @@ def get_transformations(data, asset):
     thirty_df = data[data['Time'] == thirty_timestamp] 
 
     #more to do 
+    seven_day_discount = current_stats['last'] - seven_df['Close'][0]
+    thirty_day_discount = current_stats - thirty_df['Close'][0] 
+
+    #calculate percentage discount
+    
 
 
 def s3_to_postgres(filename):
